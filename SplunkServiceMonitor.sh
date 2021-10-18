@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###edit the following
-export smtp=smtprelay.domainname.com:25
+export smtp=server.webline.co.tz:25
 service=lsws
 email=josephhelela@gmail.com.com
 ###You can provide multiple mail ID's above in email variable separated by commas
