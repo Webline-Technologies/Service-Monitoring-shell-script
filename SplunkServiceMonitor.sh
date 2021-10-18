@@ -2,8 +2,8 @@
 
 ###edit the following
 export smtp=smtprelay.domainname.com:25
-service=splunk
-email=mailID@xyz.com
+service=lsws
+email=josephhelela@gmail.com.com
 ###You can provide multiple mail ID's above in email variable separated by commas
 ###stop editing
 
@@ -12,7 +12,7 @@ if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 2 ))
 then
 echo "$service is running"
 else
-/opt/splunk/bin/$service restart
+/usr/local/lsws/bin/lswsctrl restart
 if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 2 ))
 then
 subject="$service at $host has been started"
